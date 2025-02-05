@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Resume Analyzer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Login Tab (Already Existing) -->
+    <div id="login" class="tab-content">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+            <p id="error-message" style="color: red;"></p>
+        </form>
+    </div>
+
+    <!-- Home Tab (Already Existing) -->
+    <div id="home" class="tab-content">
+        <h2>Welcome <span id="username"></span></h2>
+        <p>Your resume analysis journey starts here!</p>
+        <button id="logout">Logout</button>
+    </div>
+
+    <!-- Explore Tab (Newly Added) -->
+    <div id="explore" class="tab-content">
+        <h2>Explore Features</h2>
+        
+        <!-- Resume Upload Section -->
+        <div class="resume-upload">
+            <h3>Upload Your Resume</h3>
+            <form id="upload-form">
+                <input type="file" id="resume-file" name="resume" accept=".pdf,.docx" required />
+                <button type="submit">Upload Resume</button>
+            </form>
+        </div>
+
+        <!-- Parsed Text Section -->
+        <div id="parsed-text">
+            <h3>Parsed Resume Text</h3>
+            <textarea id="resume-text" rows="10" cols="50" readonly></textarea>
+        </div>
+
+        <!-- Resume Analysis Buttons -->
+        <div id="analysis-buttons">
+            <button id="skill-extraction">Extract Skills & Experience</button>
+            <button id="grammar-analysis">Grammar & Readability Analysis</button>
+            <button id="ats-analysis">ATS Compatibility Check</button>
+            <button id="suggestions">AI Resume Suggestions</button>
+        </div>
+
+        <div id="analysis-results"></div>
+    </div>
+
+    <!-- Advanced Features Tab (Already Existing) -->
+    <div id="advanced-features" class="tab-content">
+        <h2>Advanced Features</h2>
+        <button id="resume-score">Resume Score</button>
+        <button id="summary-generation">AI-Powered Resume Summary Generation</button>
+        <button id="resume-visualization">Resume Visualization & Graphs</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

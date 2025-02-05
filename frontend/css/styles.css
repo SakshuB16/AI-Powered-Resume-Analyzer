@@ -1,0 +1,155 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Glassmorphism Container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Buttons and Inputs */
+button, input[type="file"], input[type="text"], input[type="password"], textarea {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #1d1d1d;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #45a049;
+}
+
+/* Login Form */
+#login form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login input {
+    background-color: #333;
+    color: white;
+}
+
+/* Home Page */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home button {
+    background-color: #f44336;
+    border: none;
+    margin-top: 20px;
+}
+
+/* Explore Page */
+#explore {
+    margin-top: 20px;
+}
+
+#explore h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.resume-upload {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#upload-form input {
+    display: inline-block;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #444;
+}
+
+#upload-form button {
+    margin-top: 10px;
+}
+
+#parsed-text {
+    margin-top: 20px;
+}
+
+#resume-text {
+    background-color: #222;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+#analysis-buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+#analysis-results {
+    margin-top: 20px;
+}
+
+/* Advanced Features */
+#advanced-features button {
+    margin: 10px 0;
+}
+
+/* Hover Effect on Text Areas */
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    #explore {
+        margin-top: 10px;
+    }
+
+    #explore h2 {
+        font-size: 1.5rem;
+    }
+
+    #upload-form input {
+        width: 80%;
+    }
+}
